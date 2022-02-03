@@ -1,0 +1,3 @@
+C:/Users/elen_/CLionProjects/MargaritaTheBest/cmake-build-debug/CMakeFiles/MargaritaTheBest.dir
+C:/Users/elen_/CLionProjects/MargaritaTheBest/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/elen_/CLionProjects/MargaritaTheBest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
