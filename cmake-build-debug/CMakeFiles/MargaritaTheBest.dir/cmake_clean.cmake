@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MargaritaTheBest.dir/libs/data_structures/vector/vector.c.obj"
   "CMakeFiles/MargaritaTheBest.dir/main.c.obj"
   "MargaritaTheBest.exe"
   "MargaritaTheBest.exe.manifest"

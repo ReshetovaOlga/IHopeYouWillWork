@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/elen_/CLionProjects/MargaritaTheBest/libs/data_structures/vector/vector.c">
+			<Option target="MargaritaTheBest"/>
+		</Unit>
+		<Unit filename="C:/Users/elen_/CLionProjects/MargaritaTheBest/libs/data_structures/vector/vector.h">
+			<Option target="MargaritaTheBest"/>
+		</Unit>
 		<Unit filename="C:/Users/elen_/CLionProjects/MargaritaTheBest/main.c">
 			<Option target="MargaritaTheBest"/>
 		</Unit>

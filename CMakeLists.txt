@@ -3,4 +3,7 @@ project(MargaritaTheBest C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(MargaritaTheBest main.c)
+add_executable(MargaritaTheBest main.c libs/data_structures/vector/vector.c libs/data_structures/vector/vector.h)
+
+add_subdirectory(libs)
+target_link_libraries(course data_structures)
