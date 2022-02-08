@@ -18,8 +18,12 @@ typedef struct vector{
 //1 возвращает структуру-дескриптор из n значений.
 vector createVector(size_t n);
 
+//возвращает минимальное из двух элементов а или b
+size_t min(size_t a, size_t b);
+
 //2 изменяет количество памяти, выделенное под хранение элементов вектора
-//void reserve(vector *v, size_t newCapacity);
+void reserve(vector *v, size_t newCapacity);
+
 /*
 //3 удаляет элементы из контейнера, но не освобождает выделенную память
 void clear(vector *v){}
