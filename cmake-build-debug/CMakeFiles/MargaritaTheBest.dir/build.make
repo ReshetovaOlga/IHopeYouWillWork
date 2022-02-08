@@ -102,6 +102,7 @@ MargaritaTheBest_EXTERNAL_OBJECTS =
 MargaritaTheBest.exe: CMakeFiles/MargaritaTheBest.dir/main.c.obj
 MargaritaTheBest.exe: CMakeFiles/MargaritaTheBest.dir/libs/data_structures/vector/vector.c.obj
 MargaritaTheBest.exe: CMakeFiles/MargaritaTheBest.dir/build.make
+MargaritaTheBest.exe: libs/data_structures/libdata_structures.a
 MargaritaTheBest.exe: CMakeFiles/MargaritaTheBest.dir/linklibs.rsp
 MargaritaTheBest.exe: CMakeFiles/MargaritaTheBest.dir/objects1.rsp
 MargaritaTheBest.exe: CMakeFiles/MargaritaTheBest.dir/link.txt

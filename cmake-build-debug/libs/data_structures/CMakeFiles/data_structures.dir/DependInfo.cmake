@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/elen_/CLionProjects/MargaritaTheBest/libs/data_structures/vector/vector.c" "C:/Users/elen_/CLionProjects/MargaritaTheBest/cmake-build-debug/CMakeFiles/MargaritaTheBest.dir/libs/data_structures/vector/vector.c.obj"
-  "C:/Users/elen_/CLionProjects/MargaritaTheBest/main.c" "C:/Users/elen_/CLionProjects/MargaritaTheBest/cmake-build-debug/CMakeFiles/MargaritaTheBest.dir/main.c.obj"
+  "C:/Users/elen_/CLionProjects/MargaritaTheBest/libs/data_structures/vector/vector.c" "C:/Users/elen_/CLionProjects/MargaritaTheBest/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -23,7 +22,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/elen_/CLionProjects/MargaritaTheBest/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
