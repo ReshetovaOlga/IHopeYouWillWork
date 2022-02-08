@@ -34,26 +34,33 @@ void reserve(vector *v, size_t newCapacity) {
 }
 
 void inputVector(vector *v, size_t size) {
+    *v = createVector(size);
     if (size > v->capacity)
         reserve(v, size);
-    for (size_t i = 0; i < size; i++){
-        scanf("%d",&v->data[i]);
+    for (size_t i = 0; i < size; i++) {
+        scanf("%d", &v->data[i]);
     }
 
-    v->size=size;
+    v->size = size;
 }
 
 void outputVector(vector v) {
     if (v.size == 0)
         printf("{}");
-    else{
+    else {
         printf("{");
-        for(size_t i=0; i<v.size; i++)
-            printf("%d ",v.data[i]);
+        for (size_t i = 0; i < v.size; i++)
+            printf("%d ", v.data[i]);
         printf("/b}");
     }
 }
 
+void clear(vector *v){
+    v->size = 0;
+}
 
+void shrinkToFit(vector *v){
+    reserve(v, v->size);
+}
 
 

@@ -28,13 +28,14 @@ void inputVector(vector *v, size_t size);
 
 void outputVector(vector v);
 
-/*
+
 //3 удаляет элементы из контейнера, но не освобождает выделенную память
-void clear(vector *v){}
+void clear(vector *v);
+
 
 //4 освобождает память, выделенную под неиспользуемые элементы
-void shrinkToFit(vector *v){}
-
+void shrinkToFit(vector *v);
+/*
 //5 освобождает память, выделенную вектору.
 void deleteVector(vector *v){}
 
