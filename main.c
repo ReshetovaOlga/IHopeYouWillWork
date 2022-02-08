@@ -2,8 +2,11 @@
 # include <stdint.h>
 # include "libs/data_structures/vector/vector.h"
 
-int main () {
-    vector v = createVector(SIZE_MAX);
 
+
+int main () {
+    vector v = createVector(5);
+    inputVector(&v,3);
+    outputVector(v);
     return 0;
     }

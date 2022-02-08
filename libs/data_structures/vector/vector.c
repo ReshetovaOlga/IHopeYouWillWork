@@ -29,7 +29,31 @@ void reserve(vector *v, size_t newCapacity) {
             exit(1);
         }
         size_t newSize = min(v->size, newCapacity);
-        *v=(vector){newVector, newSize, newCapacity};
+        *v = (vector) {newVector, newSize, newCapacity};
     }
 }
+
+void inputVector(vector *v, size_t size) {
+    if (size > v->capacity)
+        reserve(v, size);
+    for (size_t i = 0; i < size; i++){
+        scanf("%d",&v->data[i]);
+    }
+
+    v->size=size;
+}
+
+void outputVector(vector v) {
+    if (v.size == 0)
+        printf("{}");
+    else{
+        printf("{");
+        for(size_t i=0; i<v.size; i++)
+            printf("%d ",v.data[i]);
+        printf("/b}");
+    }
+}
+
+
+
 

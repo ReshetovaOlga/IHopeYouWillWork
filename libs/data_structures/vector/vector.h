@@ -24,6 +24,10 @@ size_t min(size_t a, size_t b);
 //2 изменяет количество памяти, выделенное под хранение элементов вектора
 void reserve(vector *v, size_t newCapacity);
 
+void inputVector(vector *v, size_t size);
+
+void outputVector(vector v);
+
 /*
 //3 удаляет элементы из контейнера, но не освобождает выделенную память
 void clear(vector *v){}
