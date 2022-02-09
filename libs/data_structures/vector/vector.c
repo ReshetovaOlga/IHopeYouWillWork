@@ -89,3 +89,12 @@ void pushBack(vector *v, int x){
     v->size++;
 }
 
+void popBack(vector *v){
+    if (v->size==0) {
+        fprintf(stderr, "bad alloc");
+        exit(1);
+    } else{
+        v->size--;
+        reserve(v,v->size);
+    }
+}
