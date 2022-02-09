@@ -69,48 +69,48 @@ void deleteVector(vector *v) {
     reserve(v, 0);
 }
 
-bool isEmpty(vector *v){
-    return v->size==0;
+bool isEmpty(vector *v) {
+    return v->size == 0;
 }
 
-bool isFull(vector *v){
-    return v->size==v->capacity;
+bool isFull(vector *v) {
+    return v->size == v->capacity;
 }
 
-int getVectorValue(vector *v, size_t i){
-    assert(i<v->size);
+int getVectorValue(vector *v, size_t i) {
+    assert(i < v->size);
+    assert(i>=0);
     return v->data[i];
 }
 
-void pushBack(vector *v, int x){
-    if(v->size+1>v->capacity)
-        reserve(v,v->size*2);
-    v->data[v->size]=x;
-    v->size++;
+void pushBack(vector *v, int x) {
+    if (v->capacity == 0)
+        reserve(v,1);
+    else if (v->size == v->capacity)
+        reserve(v, v->capacity*2);
+    v->data[v->size++]=x;
 }
 
-void popBack(vector *v){
-    if (v->size==0) {
+void popBack(vector *v) {
+    if (v->size == 0) {
         fprintf(stderr, "bad alloc");
         exit(1);
-    } else{
+    } else
         v->size--;
-        reserve(v,v->size);
-    }
 }
 
-int* atVector(vector *v, size_t index){
-    if (index<0 || index>v->size){
+int *atVector(vector *v, size_t index) {
+    if (index < 0 || index > v->size) {
         fprintf(stderr, "IndexError: a[index] is not exists");
         exit(1);
     }
     return &v->data[index];
 }
 
-int* back(vector *v){
-    return &v->data[v->size-1];
+int *back(vector *v) {
+    return &v->data[v->size - 1];
 }
 
-int* front(vector *v){
+int *front(vector *v) {
     return &v->data[0];
 }

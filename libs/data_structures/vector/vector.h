@@ -45,7 +45,7 @@ void deleteVector(vector *v);
 bool isEmpty(vector *v);
 
 
-//7 проверяет, является ли вектор полным
+//7 isFull проверяет, является ли вектор полным
 bool isFull(vector *v);
 
 //8 возвращает i-ый элемент вектора v

@@ -15,10 +15,6 @@ stdio.h
 -
 
 C:/Users/elen_/CLionProjects/MargaritaTheBest/main.c
-stdio.h
--
-stdint.h
--
 assert.h
 -
 libs/data_structures/vector/vector.h
