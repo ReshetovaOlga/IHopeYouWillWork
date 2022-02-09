@@ -1,6 +1,8 @@
 #include "vector.h"
 #include <stdio.h>
 #include <malloc.h>
+#include <stdbool.h>
+#include <assert.h>
 
 vector createVector(size_t n) {
     int *arrayVector = NULL;
@@ -67,4 +69,23 @@ void deleteVector(vector *v) {
     reserve(v, 0);
 }
 
+bool isEmpty(vector *v){
+    return v->size==0;
+}
+
+bool isFull(vector *v){
+    return v->size==v->capacity;
+}
+
+int getVectorValue(vector *v, size_t i){
+    assert(i<v->size);
+    return v->data[i];
+}
+
+void pushBack(vector *v, int x){
+    if(v->size+1>v->capacity)
+        reserve(v,v->size*2);
+    v->data[v->size]=x;
+    v->size++;
+}
 

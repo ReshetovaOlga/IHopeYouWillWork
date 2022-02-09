@@ -40,19 +40,21 @@ void shrinkToFit(vector *v);
 //5 освобождает память, выделенную вектору.
 void deleteVector(vector *v);
 
-/*
+
 //6 проверяет, является ли вектор пустым
-bool isEmpty(vector *v){}
+bool isEmpty(vector *v);
+
 
 //7 проверяет, является ли вектор полным
-bool isFull(vector *v){}
+bool isFull(vector *v);
 
 //8 возвращает i-ый элемент вектора v
-int getVectorValue(vector *v, size_t i){}
+int getVectorValue(vector *v, size_t i);
 
 //9 добавляет элемент x в конец вектора v
-void pushBack(vector *v, int x){}
+void pushBack(vector *v, int x);
 
+/*
 //10 удаляет последний элемент из вектора
 void popBack(vector *v){}
 

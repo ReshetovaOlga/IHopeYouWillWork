@@ -4,9 +4,9 @@
 
 int main () {
     vector v = createVector(5);
-    inputVector(&v,3);
-    outputVector(v);
-    deleteVector(&v);
+    inputVector(&v,5);
+    int x=9;
+    pushBack(&v,x);
     outputVector(v);
     return 0;
     }

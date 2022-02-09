@@ -13,6 +13,10 @@ stdio.h
 -
 malloc.h
 -
+stdbool.h
+-
+assert.h
+-
 
 C:/Users/elen_/CLionProjects/MargaritaTheBest/libs/data_structures/vector/vector.h
 stdlib.h
