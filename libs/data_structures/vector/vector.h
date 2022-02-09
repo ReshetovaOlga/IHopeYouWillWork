@@ -24,10 +24,11 @@ size_t min(size_t a, size_t b);
 //2 изменяет количество памяти, выделенное под хранение элементов вектора
 void reserve(vector *v, size_t newCapacity);
 
+//ввод вектора
 void inputVector(vector *v, size_t size);
 
+//вывод вектора
 void outputVector(vector v);
-
 
 //3 удаляет элементы из контейнера, но не освобождает выделенную память
 void clear(vector *v);
@@ -35,10 +36,11 @@ void clear(vector *v);
 
 //4 освобождает память, выделенную под неиспользуемые элементы
 void shrinkToFit(vector *v);
-/*
-//5 освобождает память, выделенную вектору.
-void deleteVector(vector *v){}
 
+//5 освобождает память, выделенную вектору.
+void deleteVector(vector *v);
+
+/*
 //6 проверяет, является ли вектор пустым
 bool isEmpty(vector *v){}
 

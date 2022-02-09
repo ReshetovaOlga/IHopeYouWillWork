@@ -31,15 +31,13 @@ void test_reserve_newSizeMore(){
 }
 
 void test_reserve(){
-    void test_reserve_newSizeLess();
-    void test_reserve_newSizeEquals();
-    void test_reserve_newSizeMore();
 }
 
 void test(){
-    void test_reserve();
 }
 int main () {
-    test();
+    vector v = createVector(5);
+    inputVector(&v,7);
+    outputVector(v);
     return 0;
     }

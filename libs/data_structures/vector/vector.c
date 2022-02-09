@@ -34,7 +34,6 @@ void reserve(vector *v, size_t newCapacity) {
 }
 
 void inputVector(vector *v, size_t size) {
-    *v = createVector(size);
     if (size > v->capacity)
         reserve(v, size);
     for (size_t i = 0; i < size; i++) {
@@ -55,12 +54,16 @@ void outputVector(vector v) {
     }
 }
 
-void clear(vector *v){
+void clear(vector *v) {
     v->size = 0;
 }
 
-void shrinkToFit(vector *v){
+void shrinkToFit(vector *v) {
     reserve(v, v->size);
+}
+
+void deleteVector(vector *v) {
+    v->capacity = 0;
 }
 
 
