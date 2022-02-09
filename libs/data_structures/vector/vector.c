@@ -45,12 +45,12 @@ void inputVector(vector *v, size_t size) {
 
 void outputVector(vector v) {
     if (v.size == 0)
-        printf("{}");
+        printf("{}\n");
     else {
         printf("{");
         for (size_t i = 0; i < v.size; i++)
             printf("%d ", v.data[i]);
-        printf("/b}");
+        printf("\b}\n");
     }
 }
 
@@ -63,7 +63,8 @@ void shrinkToFit(vector *v) {
 }
 
 void deleteVector(vector *v) {
-    v->capacity = 0;
+    free(v->data);
+    reserve(v, 0);
 }
 
 
